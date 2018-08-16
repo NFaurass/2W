@@ -1,27 +1,20 @@
+<!DOCTYPE html>
 <html>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <video id="video" controls></video>
-    <script>
-    if(Hls.isSupported())
-    {
-        var video = document.getElementById('video');
-        var hls = new Hls();
-        hls.loadSource('https://rmtv24hweblive-lh.akamaihd.net/i/rmtv24hwebes_1@300661/master.m3u8');
-        hls.attachMedia(video);
-        hls.on(Hls.Events.MANIFEST_PARSED,function()
-        {
-            video.play();
-        });
-    }
-    else if (video.canPlayType('application/vnd.apple.mpegurl'))
-    {
-        video.src = 'playlist.m3u8';
-        video.addEventListener('canplay',function()
-        {
-            video.play();
-        });
-    }
-    </script>
-  </body>
+<head>
+<meta charset=utf-8 />
+<title>2wSoccer | RMA TV</title>
+  <link rel="stylesheet" type="text/css" href="https://rawgit.com/NFaurass/2W/master/P.css">
+  <script src="https://rawgit.com/NFaurass/2W/master/P1.js"></script>
+  <script src="https://rawgit.com/NFaurass/2W/master/P2.js"></script>
+</head>
+<body>
+  <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls preload="auto"
+  data-setup='{}'>
+    <source src="https://rmtv24hweblive-lh.akamaihd.net/i/rmtv24hwebes_1@300661/master.m3u8" type="application/x-mpegURL">
+  </video>
+<script>
+var player = videojs('my_video_1');
+player.play();
+</script>
+</body>
 </html>
