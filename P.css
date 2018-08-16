@@ -571,15 +571,16 @@ body.vjs-full-window {
   overflow: hidden; }
 
 .video-js .vjs-control-bar {
-  display: none;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 3.0em;
-  background-color: #2B333F;
-  background-color: rgba(43, 51, 63, 0.7); }
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3.0em;
+    background-color: #552a86db;
+    background-color: #552a86db;
+}
 
 .vjs-has-started .vjs-control-bar {
   display: flex;
