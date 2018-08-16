@@ -1,4 +1,4 @@
-.video-js .vjs-big-play-button .vjs-icon-placeholder:before, .vjs-button > .vjs-icon-placeholder:before, .video-js .vjs-modal-dialog, .vjs-modal-dialog .vjs-modal-dialog-content {
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before, .vjs-button > .vjs-icon-placeholder:before, .video-js 
   position: absolute;
   top: 0;
   left: 0;
@@ -249,19 +249,22 @@
     content: "\f120"; }
 
 .video-js {
-  display: block;
-  vertical-align: top;
-  box-sizing: border-box;
-  color: #fff;
-  background-color: #000;
-  position: relative;
-  padding: 0;
-  font-size: 10px;
-  line-height: 1;
-  font-weight: normal;
-  font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
-  word-break: initial; }
+    display: block;
+    vertical-align: top;
+    box-sizing: border-box;
+    color: #fff;
+    background: url(https://1.bp.blogspot.com/-rd-P-7T5T2Q/W3Gf9IrvjZI/AAAAAAAAAEo/hYu9LjQzj64KivVG_qDURro9FWFkqAfIQCLcBGAs/s1600/2wSoccerHomePageOgImage.png);
+    position: relative;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 10px;
+    line-height: 1;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    word-break: initial;
+}
   .video-js:-moz-full-screen {
     position: absolute; }
   .video-js:-webkit-full-screen {
